@@ -13,6 +13,21 @@ body {
 	background: radial-gradient(circle, #4b2e2b 0%, #1f1a17 100%); /* tło: ciemna kawa z lekkim gradientem */
 	font-family: "Roboto", sans-serif;
 }
+body::before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("img/coffee-4618212_1920.jpg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	filter: blur(20px);
+	opacity: 0.3;
+	z-index: -1;
+}
 
 main {
 	display: flex;
@@ -87,7 +102,7 @@ h1{
 
 ul {
 	color: #fdfaf5;
-	list-style-type: none;
+	list-style-type:circle;
 	padding: 0;
 	display: flex;
 	justify-content: center;
@@ -155,7 +170,13 @@ footer {
 		height: 12em;
 		margin-bottom: 1em;
 	}
-	
+	ul{
+		flex-direction: column;
+		gap: 1vh;
+		width: 80%;
+		align-content: center;
+		margin: auto auto 5pt auto;
+	}
 	.content {
 		align-self: center;
 		
