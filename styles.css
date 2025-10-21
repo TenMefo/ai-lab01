@@ -1,0 +1,109 @@
+* {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+}
+
+html, body {
+    border-width: 0;
+}
+
+main {
+    background: #99dbff;
+    background: radial-gradient(circle, rgba(153, 219, 255, 1) 0%, rgba(207, 224, 227, 1) 50%, rgba(124, 144, 194, 1) 100%);
+    border-radius: 25px;
+    width: 70%;
+    margin: 40px auto;
+    height: 60%;
+    /* Flexbox layout */
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 15px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.5);
+    /* border: 3px solid #7a89a7; */
+}
+
+#topbar {
+    /* background-color: red; */
+    padding: 0; /* Padding is now on the input */
+    box-sizing: border-box;
+    width: 100%;
+}
+
+input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    display: block;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+}
+
+#downbar {
+    /* background-color: green; */
+    box-sizing: border-box;
+    padding: 0;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+}
+
+#topbar input[type=text],
+#downbar input[type=text],
+#downbar input[type=date],
+#add_task_button {
+    padding: 8px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+}
+
+#downbar input[type=text] {
+    flex: 1 1 50%;
+}
+
+#downbar input[type=date] {
+    flex: 0 0 30%;
+}
+
+#add_task_button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    flex: 0 0 20%;
+    font-weight: 600;
+}
+
+#task_list {
+    background-color: #ffffff80;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 15px;
+    overflow-y: auto;
+    min-height: 300px;
+    flex: 1; /* Grow to fill available space */
+    font-size: 16px;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+}
+.match-highlight {
+    font-weight: 700;
+    background-color: #fff176; /* yellow */
+}

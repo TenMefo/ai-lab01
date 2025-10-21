@@ -1,60 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>CoffeTime</title>
-    <script src="https://wi.arturk.pl/zen-style.js.php?styles[]=style-1&styles[]=style-2" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Kaushan+Script&family=Bruno+Ace+SC&display=swap" rel="stylesheet">
-        <!-- <link rel="stylesheet" href="style-1.css"> -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>To Do List</title>
 </head>
 <body>
-    <header>
-        <h1>CoffeTime</h1>
-        <ul>
-            <li>Strona główna</li>
-            <li>Nasza historia</li>
-            <li>Oferta Sezonowa</li>
-            <li>Kontakt</li>
-        </ul>
-    </header>
     <main>
-        <div id="Box1">
-            <img src="img/pexels-itfeelslikefilm-1493104.jpg" alt="Coffee Beans">
-            <div class="content">
-                <h2>Jakość</h2><hr>
-                <h3>Świeżość ziaren</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, saepe?</p>
-                <h3>Umiejętności baristów</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, saepe?</p>
-            </div>
+        <div id="topbar">
+            <input type="text" placeholder="Znajdź.." name="search">
         </div>
-        <div id="Box2">
-            <img src="img/woman-8643502_1280.png" alt="Happy Witch">
-            <div class="content">
-                <h2>Zadowolenie</h2><hr>
-                <h3>Opinie klientów</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, saepe?</p>
-            </div>
-        </div>
-        <div id="Box3">
-            <img src="img/pexels-nastyasensei-66707-2575835.jpg" alt="Coffee Cup">
-            <div class="content">
-                <h2>Klimat</h2><hr>
-                <h3>Wystrój wnętrza</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, saepe?</p>
-                <h3>Muzyka w kawiarni</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, saepe?</p>
-            </div>
+        <div id="task_list"></div>
+        <div id="downbar">
+            <input type="text" placeholder="Nowe zadanie.." name="new_task_name">
+            <input type="date" id="new_task_date" name="new_task_date">
+            <button id="add_task_button">Zapisz</button>
         </div>
     </main>
-    <footer>Mateusz Parciak, 2025 | Strona poglądowa, kawiarnia nie istnieje 😔</p></footer>
 </body>
 </html>
